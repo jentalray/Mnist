@@ -32,7 +32,7 @@ model.add(Dense(10, activation='softmax'))
 
 # model compile & train
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-history = model.fit(x_train, y_train, batch_size = 50, epochs = 42, validation_data = (x_test, y_test)) 
+history = model.fit(x_train, y_train, batch_size = 50, epochs = 50, validation_data = (x_test, y_test)) 
 model.save('mnist.h5')
 
 # plot accuracy vs. epoch
